@@ -1,7 +1,5 @@
 import os
 from flask import Flask, render_template, redirect
-from flask_mysqldb import MySQL
-from slugify import slugify
 
 # pylint: disable=C0103
 app = Flask(__name__)
