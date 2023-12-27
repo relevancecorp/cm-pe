@@ -1,6 +1,5 @@
 import os
-
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 # pylint: disable=C0103
 app = Flask(__name__)
@@ -20,3 +19,7 @@ def hello():
 if __name__ == '__main__':
     server_port = os.environ.get('PORT', '8080')
     app.run(debug=False, port=server_port, host='0.0.0.0')
+
+@app.route('/nosotros')
+def nosotros():
+    return 'Nosotros'
