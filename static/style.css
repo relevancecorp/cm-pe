@@ -1,138 +1,210 @@
-body {
-	font-family: 'Roboto', sans-serif;
-	font-display: fallback;
-	background: url('cloud_bg.svg');
-	background-size: cover;
-	background-position: center;
-	line-height: 1.6;
- }
-
-h1 {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 0px;
+h1{
+    color: #2947f5;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    font-size: calc(1.5rem + 1.2vw);
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+h2.subtitle{
+    color: #50575e;
+    margin-top: 0;
+    font-size: 20px;
+}
+h3.prodTitle{
+    font-size: 1.05rem;
+}
+.sidebar{
+    background: #eee;
+}
+.sidefront{
+    margin-right: 60px;
+}
+.priceOld{
+    color: #a0a0a0;
+    text-decoration: line-through;
+    margin: 0;
+    font-size: 1rem;
+}
+.priceReg{
+    color: #383838;
+    margin: 0;
+    font-size: 1.375rem;
+}
+.priceNew{
+    color: #2947f5;
+    margin: 0;
+    font-size: 1.375rem;
+}
+a.plpProduct{
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+a.plpProduct .card{
+    border: #fff solid 1px;
+}
+a.plpProduct:hover .card{
+    border: #eee solid 1px;
+}
+a.plpProduct:hover h3{
+    color: #2947f5;
+}
+.text-bg-danger{
+    font-size: 0.85rem!important;
+}
+li.paginaActual{
+    padding: 5px 15px;
+    border: 1px solid;
+    border-color: #dee2e6;
+}
+ul.marcas{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10px auto;
+    background: #f7f7f7;
+    border-radius: 10px;
+}
+ul.marcas li a{
+    display: block;
+    width: 90px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    margin: 15px 10px;
+}
+img.pub{
+    width: 100%;
+}
+.pdpPage{
+    width: 100%;
+}
+.pdpPage .pdpImg img{
+    width: 100%;
 }
 
-h2 {
-	font-size: 18px;
-	font-weight: normal;
-	margin-top: 4px;
+@media only screen and (max-width: 768px) {
+    .sitecm{
+        flex-wrap: wrap;
+    }
+  }
+
+
+.siteBase .marcasBase{
+	display: flex;
+    border-radius: 15px;
+    padding: 15px;
+	margin-bottom: 15px;
+    background: #f9f9f9;
+	-webkit-box-shadow: 1px 4px 17px -7px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 4px 17px -7px rgba(0,0,0,0.2);
+	box-shadow: 1px 4px 17px -7px rgba(0,0,0,0.2);
 }
-
-h3 {
-	font-size: 20px;
-	margin-bottom: 0px;
+.siteBase .marcasBase:first-child{
+	background: #f7fbff;
+    border: 1px solid #0dcaf0;
+    border-bottom: 8px solid #0dcaf0;
 }
-
-em {
-	font-weight: 600;
-	font-style: normal;
+.siteBase .marcasBase .up{
+	flex: 0 0 20%;
+    max-width: 20%;
 }
-
-.next {
-    font-size: 15px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-}
-
-.container {
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-} 
-
-.hero {
-	margin-top: 172px;
-}
-
-.hero .logo {
-	width: 140px;
-	float: left;
-	margin-right: 32px;
-}
-
-.hero .message {
-	font-size: 15px;
+.siteBase .marcasBase .up a{
 	text-align: center;
-	margin-bottom: 24px;
+    display: block;
+    line-height: 1.2;
+    font-size: 13px;
+    color: #323232;
+	margin-top: 0;
+	margin-bottom: 5px;
 }
-
-.details {
-	clear: both;
-	height: 400px;
-	line-height: 1.8;
+.siteBase .marcasBase .up a img{
+	border-radius: 20px;
 }
-
-.callout {
-	font-size: 14px;
-	color: #1967D2;
-	font-weight: 600;
-	padding: 16px 24px 16px 40px;
-	background: url('lightbulb_icon.svg') #E8F0FE ;
-	background-position: 16px 16px;
-	background-repeat: no-repeat;
-	line-height: 1.6;
+.siteBase .marcasBase .down{
+	flex: 0 0 80%;
+    max-width: 80%;
+	display: flex;
 }
-
-code {
-	font-family: 'Roboto Mono', Courier, monospace;
-	color: #A30038;
-	background-color: #F8F8F8;
-	border: 1px solid #DDD;
-	border-radius: 2px;
-	padding: 0 6px;
-	font-weight: 500;
+.siteBase .marcasBase .down p.nombreBase{
+	font-size: 17px;
+	margin-bottom: 15px;
+	text-align: left;
+	color: #000;
+	line-height: 1.2;
+	flex: 0 0 50%;
+    max-width: 50%;
+	padding-right: 30px;
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
-
-.cta {
-	padding-bottom: 52px;
+.siteBase .marcasBase .down .preciosBase{
+	display: flex;
+	justify-content: flex-end;
+	flex: 0 0 50%;
+    max-width: 50%;
 }
-
-.cta a {
-	color: white;
-	text-decoration: none;
-	background-color: rgb(14, 101, 241);
-	padding: 8px 12px;
-	margin: 8px;
-	min-height: 36px;
-	border-radius: 2px;
-	font-weight: 600;
+.siteBase .marcasBase .down .preciosBase div{
+	flex: 0 0 50%;
+    max-width: 50%;
 }
-
-.cta a:hover {
-    background-color: rgb(66, 133, 244, 0.9);
+.siteBase .marcasBase .down .preciosBase div p:nth-child(1){
+	text-align: left;
+	font-size: 12px;
+	color: #000;
+	margin-bottom: 0;
 }
-
-@media (max-width: 600px) {
-    .hero .logo {
-        float: initial;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-	.container {
-        margin-top: 0;
+.siteBase .marcasBase .down .preciosBase div p:nth-child(2){
+	text-align: left;
+	font-size: 1.2rem;
+	color: #000;
+	margin-bottom: 4px;
+	font-weight: bold;
+}
+@media screen and (max-width: 400px){
+	.siteBase .marcasBase .up{
+		flex: 0 0 30%;
+		max-width: 30%;
 	}
-
-    .hero {
-        margin-top: 0;
-        margin-bottom: 24px;
+	.siteBase .marcasBase .down{
+		flex: 0 0 70%;
+		max-width: 70%;
+		display: block;
+	}
+	.siteBase .marcasBase .down p.nombreBase{
+		font-size: 15px;
+		margin-bottom: 10px;
+		font-weight: bold;
+		text-align: left;
+		color: #6431d9;
+		line-height: 1;
+		flex: 0 0 100%;
+    	max-width: 100%;
+		padding-right: 0;
+		height: auto;
+	}
+	.siteBase .marcasBase .down .preciosBase{
+		flex: 0 0 100%;
+    	max-width: 100%;
+	}
+	.siteBase .marcasBase .down .preciosBase div p:nth-child(1){
+		text-align: left;
+		font-size: 12px;
+		color: #000;
+		margin-bottom: 0;
+	}
+	.siteBase .marcasBase .down .preciosBase div p:nth-child(2){
+		text-align: left;
+		font-size: 1.1rem;
+		color: #000;
+		margin-bottom: 4px;
+		font-weight: bold;
+	}
+	.siteBase .marcasBase .up a{
+		margin-top: 5px;
 	}
 }
-@media (prefers-color-scheme: dark) {
-    body {
-        background: black url('dark_bg.svg');
-        color:white;
-    }
-	a {
-		color: #8AB4F8;
-	}
-	a:visited {
-		color: #b48af8;
-	}
-	.cta a {
-		color: white;
-	}
-}
-
